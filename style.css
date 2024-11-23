@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.75;
+    font-family: "Poppins", sans-serif;
+    background-color: #f6f6f9;
+}
+
+header, 
+main {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    padding: 5;
+}
