@@ -4,95 +4,96 @@
     box-sizing: border-box;
 }
 
-body {
-    line-height: 1.75;
-    font-family: "Poppins", sans-serif;
-    background-color: #f6f6f9;
+html {
+    font-size: 62.5%;
 }
 
-header, 
-main {
-    width: 95%;
-    max-width: 1280px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 5px;
+body {
+    color: #222;
+    line-height: 1.75;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
+    width: 95%;
+    max-width: 1440px;
+    margin: 50px auto;
     text-align: center;
 }
 
 h1 {
-    font-size: 48px;
-}
-
-.error-container p {
-    color: #ff6347;
-    /* display: none; */
+    font-size: 4rem;
 }
 
 main {
-    padding: 20px;
-    border: 2px solid red;
-}
-
-.form-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 95%;
+    max-width: 1440px;
+    margin: 25px auto;
 }
 
 form {
     display: flex;
-    margin: 10px 0;
+}
+
+form:first-of-type {
+    margin-bottom: 25px;
+}
+
+label {
+    align-self: center;
+    font-size: 1.5rem;
 }
 
 input {
-    margin-left: 15px;
-    padding: 5px 10px;
     width: 300px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    font-size: 1.5rem;
     outline: none;
-    font-family: inherit;
     border: 1px solid #ddd;
 }
 
-button {
-    padding: 0 15px;
+.btn {
+    padding: 10px 15px;
+    color: #fff;
     border: none;
     cursor: pointer;
-    color: #f6f6f9;
     background-color: #363949;
 }
 
 .overview-dashboard {
     margin: 25px 0;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
-    gap: 25px;
+}
+
+.overview-dashboard h3 {
+    font-size: 2.5rem;
+}
+
+.overview-dashboard p {
+    font-size: 1.25rem;
 }
 
 .budget-overview,
 .expenses-overview,
 .balance-overview {
     flex-grow: 1;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 25px;
-    color: #363949;
-    background-color: #f6f6f9;
     border-radius: 5px;
+    background-color: #f6f6f9;
 }
 
 .icon-container {
-    padding: 15px 20px;
+    margin-right: 15px;
+    padding: 15px;
     border-radius: 5px;
 }
 
-.icon-container i {
-    font-size: 24px;
+i {
+    font-size: 3.25rem;
 }
 
 .budget-overview .icon-container {
@@ -102,10 +103,53 @@ button {
 
 .expenses-overview .icon-container {
     color: #fbc02d;
-    background-color: #fff2c6;
+    background-color: #fff2c6;;
 }
 
 .balance-overview .icon-container {
     color: #388e3c;
-    background-color: #bbf7d0;
+    background-color: #bbf7d0;;
+}
+
+.expenses-details {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f6f6f9;
+}
+
+.expenses-details h3 {
+    font-size: 2.5rem;
+}
+
+table {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+th {
+    color: #fff;
+    text-align: left;
+    background-color: #363949;
+}
+
+th, td {
+    padding: 15px 20px;
+}
+
+tr {
+    border-top: 1px solid #363949;
+}
+
+.edit-btn {
+    margin-right: 10px;
+    background-color: #388e3c;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
 }

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -25,44 +25,30 @@
   </head>
   <body>
     <header>
-      <h1>Budget Tracker</h1>
-      <div class="error-container">
-        <p>Please enter a budget amount greater than $0</p>
-      </div>
+      <h1>Budget App</h1>
     </header>
 
     <main>
-      <div class="form-container">
-        <form class="budget">
-          <label for="budget">Your Budget: </label>
-          <input type="number" name="budget" placeholder="Enter Your Budget" />
-          <button>Submit Budget</button>
-        </form>
+      <form>
+        <label>Your budget: </label>
+        <input type="number" placeholder="Enter Your Budget" />
+        <button class="btn">Set Budget</button>
+      </form>
 
-        <form class="expenses">
-          <label for="expenses">Your Expenses: </label>
-          <input
-            type="text"
-            name="expenses"
-            placeholder="Enter Your Expense Description"
-          />
-          <input
-            type="number"
-            name="expenses"
-            placeholder="Enter Your Expense Amount"
-          />
-          <button>Submit Expense</button>
-        </form>
-      </div>
+      <form>
+        <label>Expense details: </label>
+        <input type="text" placeholder="Enter Your Expense Description" />
+        <input type="number" placeholder="Enter Your Expense Amount" />
+        <button class="btn">Add Expense</button>
+      </form>
 
       <div class="overview-dashboard">
         <div class="budget-overview">
           <div class="icon-container">
             <i class="fa-solid fa-sack-dollar"></i>
           </div>
-
           <div>
-            <h3>$300</h3>
+            <h3>$100</h3>
             <p>Budget</p>
           </div>
         </div>
@@ -71,23 +57,58 @@
           <div class="icon-container">
             <i class="fa-solid fa-cash-register"></i>
           </div>
-
           <div>
-            <h3>$300</h3>
+            <h3>$100</h3>
             <p>Expenses</p>
           </div>
         </div>
 
         <div class="balance-overview">
           <div class="icon-container">
-            <i class="fa-solid fa-wallet"></i>
+            <i class="fa-solid fa-coins"></i>
           </div>
-
           <div>
-            <h3>$300</h3>
+            <h3>$100</h3>
             <p>Balance</p>
           </div>
         </div>
+      </div>
+
+      <div class="expenses-details">
+        <h3>Expenses Details</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Exepnse Description</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Gaming Mouse</td>
+              <td>$120</td>
+              <td>
+                <button class="btn edit-btn">Edit</button>
+                <button class="btn delete-btn">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Gaming Mouse</td>
+              <td>$120</td>
+              <td>
+                <button class="btn edit-btn">Edit</button>
+                <button class="btn delete-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   </body>
