@@ -23,6 +23,89 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+.error-container p {
+    color: #ff6347;
+    /* display: none; */
+}
+
 main {
-    padding: 5;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    margin: 10px 0;
+}
+
+input {
+    margin-left: 15px;
+    padding: 5px 10px;
+    width: 300px;
+    outline: none;
+    font-family: inherit;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+    color: #f6f6f9;
+    background-color: #363949;
+}
+
+.overview-dashboard {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.budget-overview,
+.expenses-overview,
+.balance-overview {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    color: #363949;
+    background-color: #f6f6f9;
+    border-radius: 5px;
+}
+
+.icon-container {
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.icon-container i {
+    font-size: 24px;
+}
+
+.budget-overview .icon-container {
+    color: #1976d2;
+    background-color: #cfe8ff;
+}
+
+.expenses-overview .icon-container {
+    color: #fbc02d;
+    background-color: #fff2c6;
+}
+
+.balance-overview .icon-container {
+    color: #388e3c;
+    background-color: #bbf7d0;
 }
