@@ -25,6 +25,26 @@ h1 {
     font-size: 4rem;
 }
 
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 main {
     width: 95%;
     max-width: 1440px;
@@ -58,13 +78,14 @@ input {
     color: #fff;
     border: none;
     cursor: pointer;
+    outline: none;
     background-color: #363949;
 }
 
 .overview-dashboard {
-    margin: 25px 0;
+    margin: 50px 0;
     display: flex;
-    gap: 50px;
+    gap: 25px;
     justify-content: space-between;
 }
 
@@ -147,7 +168,7 @@ tr {
 
 .edit-btn {
     margin-right: 10px;
-    background-color: #388e3c;
+    background-color: #fbc02d;
 }
 
 .delete-btn {
